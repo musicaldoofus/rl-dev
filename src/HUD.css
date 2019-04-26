@@ -1,0 +1,10 @@
+/*HUD.css*/
+.heads-up-display-log {
+
+}
+.heads-up-display-log span:nth-child(1) {
+	border-right: 1px solid black;
+	margin-right: 8px;
+    border-right: 2px solid black;
+    padding-right: 8px;
+}

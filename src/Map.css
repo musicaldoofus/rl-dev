@@ -1,0 +1,40 @@
+/*Map.css*/
+.map-wrapper {
+	padding: 4px;
+	border: 1px solid #000;
+	position: relative;
+	margin-top: 12px;
+	flex-grow: 10;
+}
+.map {
+	display: grid;
+	font-weight: 400;
+	font-size: 1rem;
+}
+.display-title {
+	position: absolute;
+    top: -8px;
+    background-color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 0.7rem;
+    left: 6px;
+}
+.cell {
+	font-family: 'Press Start 2P', cursive;
+	font-weight: 100;
+}
+.cell.wall::after {
+	content: '#';
+}
+.cell.open::after {
+	content: '.';
+}
+.cell.player::after {
+	content: '@';
+}
+.cell.door.closed::after {
+	content: '+';
+}
+.cell.door.open::after {
+	content: '-';
+}
